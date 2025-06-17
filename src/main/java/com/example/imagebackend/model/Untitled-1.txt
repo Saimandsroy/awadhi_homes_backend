@@ -1,0 +1,22 @@
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── ActivityCard.jsx
+│   │   └── OAuthButton.jsx
+│   ├── pages/
+│   │   ├── Signup.jsx
+│   │   ├── SignIn.jsx
+│   │   └── Dashboard.jsx
+│   ├── utils/
+│   │   ├── api.js
+│   │   └── validation.js
+│   ├── App.jsx
+│   ├── index.js
+│   └── index.css
+├── tailwind.config.js
+├── package.json
+└── README.md

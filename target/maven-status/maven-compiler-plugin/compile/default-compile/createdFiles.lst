@@ -1,6 +1,6 @@
 com\example\imagebackend\SecurityConfig.class
-com\example\imagebackend\controller\ImageController.class
 com\example\imagebackend\model\Image.class
 com\example\imagebackend\ImageBackendApplication.class
+com\example\imagebackend\controller\ImageController.class
 com\example\imagebackend\service\ImageService.class
 com\example\imagebackend\repository\ImageRepository.class

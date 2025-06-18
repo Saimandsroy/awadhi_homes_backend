@@ -60,4 +60,9 @@ public class ImageController {
         imageService.deleteImage(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/")
+    public String home() {
+        return "Spring Boot Image Backend is running!";
+    }
 }

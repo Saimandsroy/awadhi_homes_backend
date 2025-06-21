@@ -38,6 +38,7 @@ public class ImageController {
             Image savedImage = imageService.saveImage(image);
             return ResponseEntity.ok(savedImage);
         } catch (Exception e) {
+             e.printStackTrace();
             return ResponseEntity.badRequest().build();
         }
     }

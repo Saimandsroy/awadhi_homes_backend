@@ -21,7 +21,7 @@ public class FirebaseConfig {
             serviceAccount = new FileInputStream(credPath);
         } else {
             // fallback to classpath resource for local dev and tests
-            serviceAccount = getClass().getClassLoader().getResourceAsStream("awadhi2025-db578-firebase-adminsdk-fbsvc-f0b932916e.json");
+            serviceAccount = getClass().getClassLoader().getResourceAsStream("awadhi2025-db578-firebase-adminsdk-fbsvc-936a229df8.json");
             if (serviceAccount == null) {
                 throw new IllegalStateException("Firebase credentials not found! Set GOOGLE_APPLICATION_CREDENTIALS or place the JSON in resources.");
             }

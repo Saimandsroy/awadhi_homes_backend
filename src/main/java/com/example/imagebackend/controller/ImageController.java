@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.Base64;
 import java.util.List;
 
 @RestController
@@ -27,7 +28,8 @@ public class ImageController {
             image.setTitle(title);
             image.setDescription(description);
             image.setUploadDate(new java.util.Date());
-            image.setData(file.getBytes());
+            // Encode file bytes to Base64 string
+            image.setData(Base64.getEncoder().encodeToString(file.getBytes()));
             image.setAnalysisType(analysisType);
             Image savedImage = imageService.saveImage(image);
             return ResponseEntity.ok(savedImage);

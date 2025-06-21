@@ -8,11 +8,11 @@ public class Image {
     private String description;
     private Date uploadDate;
     private String analysisType;
-    private byte[] data;
+    private String data; // Base64 encoded string
 
     public Image() {}
 
-    public Image(String title, String description, Date uploadDate, String analysisType, byte[] data) {
+    public Image(String title, String description, Date uploadDate, String analysisType, String data) {
         this.title = title;
         this.description = description;
         this.uploadDate = uploadDate;
@@ -30,6 +30,6 @@ public class Image {
     public void setUploadDate(Date uploadDate) { this.uploadDate = uploadDate; }
     public String getAnalysisType() { return analysisType; }
     public void setAnalysisType(String analysisType) { this.analysisType = analysisType; }
-    public byte[] getData() { return data; }
-    public void setData(byte[] data) { this.data = data; }
+    public String getData() { return data; }
+    public void setData(String data) { this.data = data; }
 }
